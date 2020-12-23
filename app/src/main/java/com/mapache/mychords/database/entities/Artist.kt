@@ -3,7 +3,7 @@ package com.mapache.mychords.database.entities
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "Artist")
+@Entity(tableName = "artist")
 data class Artist(
     @PrimaryKey
     val idArtist: Int,
