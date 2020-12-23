@@ -19,10 +19,10 @@ interface SongDAO {
     fun getSong(id: Int): Song
 
     @Query("SELECT * FROM song WHERE idArtist = :idArtist")
-    fun getSongWithArtist(idArtist: Int): LiveData<List<Song>>
+    fun getSongsWithArtist(idArtist: Int): LiveData<List<Song>>
 
     @Query("SELECT * FROM song WHERE idUser = :idUser")
-    fun getSongWithUser(idUser: Int): LiveData<List<Song>>
+    fun getSongsWithUser(idUser: Int): LiveData<List<Song>>
 
     @Query("DELETE FROM song")
     suspend fun nukeTable()
