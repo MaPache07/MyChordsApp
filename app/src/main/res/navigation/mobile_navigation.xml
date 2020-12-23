@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.mapache.mychords.ui.home.HomeFragment"
+        android:name="com.mapache.mychords.ui.fragments.MyChordsFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_my_chords" />
 
     <fragment
         android:id="@+id/navigation_dashboard"

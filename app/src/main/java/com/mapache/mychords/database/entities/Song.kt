@@ -10,7 +10,7 @@ data class Song(
     val idArtist: Int,
     val idUser: Int,
     val name: String,
-    val parts: List<String>,
-    val chords: List<List<String>>,
-    val replay: List<Int>
+    val parts: String,
+    val chords: String,
+    val replay: String
 )
