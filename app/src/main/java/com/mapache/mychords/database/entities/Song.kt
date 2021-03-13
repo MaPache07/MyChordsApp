@@ -6,11 +6,16 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "song")
 data class Song(
     @PrimaryKey
-    val idSong: Int,
-    val idArtist: Int,
-    val idUser: Int,
-    val name: String,
-    val parts: String,
-    val chords: String,
-    val replay: String
+    val id_song: Int = -1,
+    val id_artist: Int = -1,
+    val id_user: Int = -1,
+    val name: String = "",
+    val intro: String = "",
+    val strophe: String = "",
+    val pre_chorus: String = "",
+    val chorus: String = "",
+    val bridge: String = "",
+    val solo: String = "",
+    val final_chorus: String = "",
+    val final: String = ""
 )

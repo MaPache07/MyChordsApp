@@ -15,13 +15,13 @@ interface SongDAO {
     @Query("SELECT * FROM song")
     fun getAllSong(): LiveData<List<Song>>
 
-    @Query("SELECT * FROM song WHERE idSong = :id")
+    @Query("SELECT * FROM song WHERE id_song = :id")
     fun getSong(id: Int): Song
 
-    @Query("SELECT * FROM song WHERE idArtist = :idArtist")
+    @Query("SELECT * FROM song WHERE id_artist = :idArtist")
     fun getSongsWithArtist(idArtist: Int): LiveData<List<Song>>
 
-    @Query("SELECT * FROM song WHERE idUser = :idUser")
+    @Query("SELECT * FROM song WHERE id_user = :idUser")
     fun getSongsWithUser(idUser: Int): LiveData<List<Song>>
 
     @Query("DELETE FROM song")

@@ -15,7 +15,7 @@ interface ArtistDAO {
     @Query("SELECT * FROM artist")
     fun getAllArtist(): LiveData<List<Artist>>
 
-    @Query("SELECT * FROM artist WHERE idArtist = :id")
+    @Query("SELECT * FROM artist WHERE id_artist = :id")
     fun getArtist(id: Int): Artist
 
     @Query("DELETE FROM artist")

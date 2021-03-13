@@ -12,6 +12,8 @@ class SongRepository(private val songDAO: SongDAO, private val artistDAO: Artist
     val allSongs: LiveData<List<Song>> = songDAO.getAllSong()
     val allArtist: LiveData<List<Artist>> = artistDAO.getAllArtist()
 
+    /* INSERTS */
+
     @WorkerThread
     suspend fun insertSong(song: Song){
         songDAO.insert(song)
@@ -22,6 +24,8 @@ class SongRepository(private val songDAO: SongDAO, private val artistDAO: Artist
         artistDAO.insert(artist)
     }
 
+    /* GET's */
+
     fun getSong(id: Int) = songDAO.getSong(id)
 
     fun getArtist(id: Int) = artistDAO.getArtist(id)
@@ -29,6 +33,8 @@ class SongRepository(private val songDAO: SongDAO, private val artistDAO: Artist
     fun getSongsWithArtist(idArtist: Int) = songDAO.getSongsWithArtist(idArtist)
 
     fun getSongsWithUser(idUser: Int) = songDAO.getSongsWithUser(idUser)
+
+    /* NUKE TABLES */
 
     @WorkerThread
     suspend fun nukeSong(){

@@ -26,6 +26,8 @@ class SongViewModel(private val app: Application) : AndroidViewModel(app){
         allArtist = repository.allArtist
     }
 
+    /* INSERTS */
+
     fun insertSong(song: Song) = viewModelScope.launch(Dispatchers.IO){
         repository.insertSong(song)
     }
@@ -34,6 +36,8 @@ class SongViewModel(private val app: Application) : AndroidViewModel(app){
         repository.insertArtist(artist)
     }
 
+    /* GET's */
+
     fun getSong(id: Int) = repository.getSong(id)
 
     fun getArtist(id: Int) = repository.getArtist(id)
@@ -41,6 +45,8 @@ class SongViewModel(private val app: Application) : AndroidViewModel(app){
     fun getSongsWithArtist(idArtist: Int) = repository.getSongsWithArtist(idArtist)
 
     fun getSongsWithUser(idUser: Int) = repository.getSongsWithUser(idUser)
+
+    /* NUKE TABLES */
 
     private suspend fun nukeSong() = repository.nukeSong()
 
