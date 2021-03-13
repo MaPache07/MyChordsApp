@@ -1,4 +1,4 @@
-package com.mapache.mychords.activities
+package com.mapache.mychords.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

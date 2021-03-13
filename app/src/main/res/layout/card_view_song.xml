@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/cardview_all_projects"
+    android:paddingHorizontal="@dimen/normal_padding"
+    android:foreground="?android:attr/selectableItemBackground">
+    <TextView
+        android:id="@+id/item_song_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="@dimen/normal_text_size"
+        android:textColor="@color/black"
+        android:paddingTop="@dimen/normal_padding"
+        android:paddingBottom="@dimen/small_padding"/>
+    <TextView
+        android:id="@+id/item_artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="15sp"
+        android:textColor="@color/gray"
+        android:paddingBottom="@dimen/normal_padding"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+</LinearLayout>

@@ -1,11 +1,16 @@
 package com.mapache.mychords.models
 
 data class SongModel(
-    val idSong: Int,
-    val idArtist: Int,
-    val idUser: Int,
+    val id_song: Int,
+    val artist: String,
+    val user: String,
     val name: String,
-    val parts: List<String>,
-    val chords: List<List<String>>,
-    val replay: List<Int>
+    var intro: String = "",
+    var strophe: String = "",
+    var pre_chorus: String = "",
+    var chorus: String = "",
+    var bridge: String = "",
+    var solo: String = "",
+    var final_chorus: String = "",
+    var final: String = ""
 )

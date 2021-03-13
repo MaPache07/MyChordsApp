@@ -1,4 +1,4 @@
-package com.mapache.mychords.activities
+package com.mapache.mychords.ui.activities
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
