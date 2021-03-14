@@ -7,4 +7,10 @@
     <string name="title_perfil">Perfil</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_message">
+        <![CDATA[
+            ¡Bienvenido!\nSi quieres disfrutar de todas las funciones que ofrece MyChordsApp, inicia sesión
+        ]]></string>
+    <string name="dialog_agree">ACEPTAR</string>
+    <string name="dialog_cancel">CANCELAR</string>
 </resources>
